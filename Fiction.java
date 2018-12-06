@@ -1,6 +1,6 @@
-public class Fiction{
+public class Fiction extends Book{
 	
-	void setPrice(double price){
+	public void setPrice(double price){
 		price=24.99;
 	}
 }

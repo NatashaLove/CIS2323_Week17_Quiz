@@ -1,6 +1,7 @@
-public class NonFiction{
+public class NonFiction extends Book{
 	
-	void setPrice(double price){
+	
+	public void setPrice(double price){
 		price=37.99;
 	}
 }
