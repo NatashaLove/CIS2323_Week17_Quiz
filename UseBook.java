@@ -11,30 +11,35 @@ abstract class Book {
 		
 	// }
 	
-	// String getTitle(){
-		// return title;
-	// }
-	// double getPrice(){
-		// return price;
-	// }
+	 String getTitle(){
+		return title;
+	 }
+	 double getPrice(){
+		return price;
+	 }
 	
 	public abstract void setPrice(double price);
 }
 
+
+//РАЗОБРАТЬСЯ С КОНСТРУКТОРАМИ!!! (super)?
 class Fiction extends Book{
 	
 	Fiction() {
-    super("Fiction");// You have to pass String and int values to super class
-	}
+		//public String title="";
+		super(" ");// You have to pass String value to super class
+		}
 	
-	 public void setPrice(double price){
-		price=24.99;
-	}
+		 public void setPrice(double price){
+			price=24.99;
+		}
 }
 
 class NonFiction extends Book{
 	NonFiction() {
-    super("NonFiction");
+		//public String title="";
+		super(" ");
+    
 	}
 	 public void setPrice(double price){
 		price=37.99;
@@ -47,11 +52,11 @@ class NonFiction extends Book{
 public class UseBook {
 	public static void main(String[] args){
 		
-		// Fiction fict = new Fiction("Alice in WonderLand.");
-		// NonFiction nonfict = new NonFiction("English-Russian Dictionary");
+		Fiction fict = new Fiction("Alice in WonderLand.");
+		NonFiction nonfict = new NonFiction("English-Russian Dictionary");
 		
-		// System.out.println("We have a fiction book "+ fict.getTitle + " at the price "+ fict.getPrice+ ".");
-		// System.out.println("We have a non-fiction book "+ nonfict.getTitle + " at the price "+ nonfict.getPrice+ ".");
+		System.out.println("We have a fiction book "+ fict.getTitle + " at the price "+ fict.getPrice+ ".");
+		System.out.println("We have a non-fiction book "+ nonfict.getTitle + " at the price "+ nonfict.getPrice+ ".");
 	}
 	
 }
