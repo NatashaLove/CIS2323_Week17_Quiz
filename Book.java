@@ -1,20 +1,20 @@
 public abstract class Book {
-	private String title="";
-	private double price=0;
+	String title="";
+	double price=0;
 	
+	//public Book() {}
 	public Book(String title){
 		this.title=title;
 	}
-	// public Book() {
-		
-	// }
-	
-	String getTitle(){
-		return title;
-	}
-	double getPrice(){
-		return price;
-	}
 	
 	public abstract void setPrice(double price);
+	
+	public String getTitle(){
+		return title;
+	 }
+	public double getPrice(){
+		return price;
+	 }
+	
+	
 }

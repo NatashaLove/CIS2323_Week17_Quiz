@@ -1,6 +1,14 @@
 public class Fiction extends Book{
 	
-	public void setPrice(double price){
-		price=24.99;
-	}
+	Fiction(String title) {
+		//public String title="";
+		super(title);// You have to pass String value to super class
+		setPrice(24.99);
+		}
+	@Override
+		 public void setPrice(double pr){
+			//pr=24.99;
+			price=pr;
+		}
+
 }
