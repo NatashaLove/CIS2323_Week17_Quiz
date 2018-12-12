@@ -9,6 +9,7 @@ public class UseBook {
 		
 		System.out.println("");
 		System.out.println("We have a fiction book "+ fict.getTitle() + " at the price "+ fict.getPrice()+ "$.");
+		System.out.println("");
 		System.out.println("We have a non-fiction book "+ nonfict.getTitle() + " at the price "+ nonfict.getPrice() + "$.");
 	}
 	
